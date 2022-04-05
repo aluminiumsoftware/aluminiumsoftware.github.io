@@ -1,4 +1,4 @@
-<form name="loginform">
+<form name="loginform" onSubmit="return validateForm();" action="main.html" method="post">
     <label>User name</label>
     <input type="text" name="user" placeholder="username"> 
     <label>Password</label>
@@ -12,8 +12,7 @@
         var p = document.loginform.pass.value;
         var username = "username"; 
         var password = "password";
-        if ((u == username) && (p == password)) 
-        {
+        if ((u == username) && (p == password)) {
             window.location = "main.html";
             return false;
         }
