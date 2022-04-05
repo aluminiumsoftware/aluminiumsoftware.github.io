@@ -4,4 +4,6 @@
         p = p.match(new RegExp(key + '=([^&=]+)'));
         return p ? p[1] : false;
     }
+    
+    document.write($_GET('key'));
   </script>
